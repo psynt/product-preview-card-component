@@ -21,19 +21,23 @@
 <body>
 
   <main>
-    <img class="desktop" src="./images/image-product-desktop.jpg" alt="Perfume Desktop">
-    <img class="mobile" src="./images/image-product-mobile.jpg" alt="Perfume Desktop">
+    <picture>
+      <source media="(max-width: 500px)" srcset="./images/image-product-mobile.jpg">
+      <img src="./images/image-product-desktop.jpg" alt="Image of a Chanel perfume">
+    </picture>
 
     <div class="details">
       <div class="perfume">Perfume</div>
 
-      <div class="title">Gabrielle Essence Eau De Parfum</div>
+      <h2>Gabrielle Essence Eau De Parfum</h2>
 
       <div class="subtext">A floral, solar and voluptuous interpretation composed by Olivier Polge,
         Perfumer-Creator for the House of CHANEL.</div>
 
-      <div class="price"><div class="current">$149.99</div>
-        <div class="old">$169.99</div>
+      <div class="price">
+        <div class="current">$149.99</div>
+        <del>$169.99</del>
+        <span class="sr-only">The previous price was $169.99.</span>
       </div>
 
       <button type="button" class="cart"> <img src="./images/icon-cart.svg" alt="Cart Icon"> Add to Cart</button>
